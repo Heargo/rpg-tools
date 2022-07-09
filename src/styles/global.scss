@@ -1,0 +1,38 @@
+//Normalize css
+@import "@/styles/normalize.scss";
+
+//-------------------------------
+//-----------VARIABLES-----------
+//-------------------------------
+
+$red:rgb(223, 52, 52);
+$white: white;
+$orange: #FCA311;
+$dark-blue: #14213D;
+$grey: #E5E5E5;
+
+$formbgcolor: $grey;
+
+//---------------------------------
+//-----------BREAKPOINTS-----------
+//---------------------------------
+
+/* smartphones ----------- */
+$br-smartphone:only screen and (min-device-width : 320px) and (max-device-width : 480px);
+$br-smartphone-l:only screen and (min-width : 321px);
+$br-smartphone-p:only screen and (max-width : 320px);
+
+/* iPads (portrait and landscape) ----------- */
+$br-ipad:only screen and (min-device-width : 768px) and (max-device-width : 1024px);
+$br-ipad-l:only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape);
+$br-ipad-p:only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait);
+
+/* Desktops and laptops ----------- */
+$br-desk-lap-top:only screen and (min-width : 1224px);
+
+/* Large screens ----------- */
+$br-large: only screen and (min-width : 1824px);
+
+//----------------------------------
+//-----------GLOBAL STYLE-----------
+//----------------------------------
