@@ -1,0 +1,49 @@
+{
+    "basic":["dormir","s'occuper de sa famille","promener son chien","jardiner","faire des randonnés","bricoler","cuillir des fruits sauvages","faire les vides greniers","collectionner divers objets"],
+    "strength":["faire de la musculation","courir","faire de l'escalade","nager","jouer au foot","faire du rugby","faire des art martiaux","faire du vélo","faire du surf","danser","faire du handball","faire du skate","faire du tir à l'arc","jouer au tennis","jouer au badminton"],
+    "wealth":["jouer au golfe","voyager","faire du parachutisme","faire de la plongée","piloter des avions","jouer au poker","aller à l'opéra","faire du jetski","investir dans l'immobiler","aller dans des restaurants gastronomique","créer des fondation","faire des films"],
+    "intelligence":["jouer au échecs","jouer aux dames","jouer au go","faire de la recherche","apprendre des nouvelles choses","lire"]    ,
+    "creativity":["écrire","dessiner","faire de la musique","faire du théâtre","cuisiner","bricoler","danser","chanter","faire des films","créer des jardins","peindre","faire de la poterie","travailler le bois","travailler le verre","faire de la couture","sculpter","faire des peluches"],
+    "physicalTraits":{
+        "hairShape":{
+            "girl":["ondulés","frisés","bouclés","raides"],
+            "boy":["court","ras","mis-long","long"]
+        },
+        "hairColor":["brun","noir","d'un blond sombre","blond vénicien","chatain","roux","couleur ébène","poivre et sel","gris","blanc"],
+        "hairCut":{
+            "girl":["descendant aux épaules","coupés courts","courts et ébouriffés","coupé au carré","ramené en arrière","descendant jusqu'à la taille","coiffés en balayage","coiffés en une longue tresse","coiffés en multiples tresses","long et plaqués","en queue de cheval","coiffés en un chignon serré","coiffé en un chignon à moitié défait"],
+            "boy":["ondulés","frisés","bouclés","raides"]
+        },
+        "eyeColor":["noirs","marrons","bleus","verts","gris","verts-or","bleu-verts","vairons, l'un bleu l'autre vert","vairons, l'un marron l'autre vert","vairons, l'un bleu l'autre marron","rouges","violets"],
+        "eyeShape":["oval","bridés","rieurs","en amande","légérements écartés","légérements enfoncés","légérements rapprochés","légérements tombants"],
+        "faceShape":["plat","rond","oval","carré","en pointe","aux traits fins"],
+        "faceShapeScary":["aux traits abimés","balafré","diforme"]
+    },
+    "mentalTraits":{
+        "default":["sa froideur","sa nonchalence","son passé mystérieux","sa persistance","sa motivation"],
+        "intelligence":["son intelligence"],
+        "creativity":["sa créativité"],
+        "strength":["sa force"]
+    },
+    "transitions":{
+        "physicalImpact":["soulignent","mettent en valeur"],
+        "introducePositive":["Il y a quelque chose"],
+        "introduceNegative":["Il y a cependant quelque chose"]
+    },
+    "feelings":{
+        "positive":["confiance","un sentiment d'appaisement","un sentiment de sécurité"],
+        "negative":["un sentiment de méfiance","un sentiment de peur","un sentiment de dégoût"]
+    },
+    "adjectives":["d'étrange","de beau","de surprenant","d'envoûtant","d'amusant","d'intriguant","de mystérieux"],
+    "template":{
+        "baby":{
+            "boy":["{name} est un bébé de {age} ans au visage {face} Ses yeux {eyes} brillent de curiosité. Né d’une famille {familyWealth}, il semble promis à un avenir {future}"],
+            "girl":["{name} est un bébé de {age} ans au visage {face} Ses yeux {eyes} brillent de curiosité. Née d’une famille {familyWealth}, elle semble promis à un avenir {future}"]
+        },
+        "default":{
+            "boy":["{name} est un {qualificatif_age} de {age} ans. Ses cheveux {couleurCheveux} {formeCheveux} et {coupeCheveux}, {transition1} un visage {formeVisage} qui inspire {sentimentVisage}. Ses yeux {couleurYeux} {formeYeux} accentuent ce sentiment. Né d’une famille {familyWealth}, il passe la plupart de son temps à {passion1} ou à {passion2}. {phrase} {adjectif} chez lui: peut-être sa passion pour {passionX} ou {caracteristique_sociale}"],
+            "girl":["{name} est une {qualificatif_age} de {age} ans. Ses cheveux {couleurCheveux} {formeCheveux} et {coupeCheveux}, {transition1} un visage {formeVisage} qui inspire {sentimentVisage}. Ses yeux {couleurYeux} {formeYeux} accentuent ce sentiment. Née d’une famille {familyWealth}, elle passe la plupart de son temps à {passion1} ou à {passion2}. {phrase} {adjectif} chez elle: peut-être sa passion pour {passionX} ou {caracteristique_sociale}"]
+        }
+    }
+
+}
