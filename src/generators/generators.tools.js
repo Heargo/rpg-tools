@@ -120,3 +120,13 @@ export function createArray(start,end) {
     }
     return arr;
 }
+
+/**
+ * It returns the key of an object that matches the value you pass to it
+ * @param object - The object to search through.
+ * @param value - The value you want to find the key for.
+ * @returns The key of the object that matches the value.
+ */
+export function getKeyByValue(object, value) {
+    return Object.keys(object).find(key => object[key] === value);
+}
