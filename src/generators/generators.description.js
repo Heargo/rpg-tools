@@ -21,7 +21,6 @@ export function passion(stats,threshold=7,n=2)
             passionsOptions= passionsOptions.concat(descriptions[stat]);
         }
     }
-    console.log(passionsOptions);
     //select n passions
     var passions = [];
     var selectPassion = selecterNoRepeats(passionsOptions);

@@ -68,6 +68,12 @@ export function selecterNoRepeats(arr) {
     };
 }
 
+/**
+ * It takes a string and an object, and replaces all instances of {key} in the string with the value of
+ * obj[key].
+ * @param str - The string to be formatted.
+ * @param obj - {
+ */
 export function formated(str,obj) {
     for (let key in obj) {
         str = str.replace(new RegExp("{"+key+"}","g"),obj[key]);
@@ -75,3 +81,42 @@ export function formated(str,obj) {
     return str;
 }
 
+
+
+/**
+ * It takes an array and an average, and returns a dictionary with the array values as keys and the
+ * probability of each value as the value
+ * @param array - the array of values
+ * @param average - the average of the array
+ * @returns A dictionary with the keys being the array values and the values being the probabilities.
+ */
+export function gauss(array,average) {
+    var a=array.length/6;
+    average = array.indexOf(average);
+    var probs=[];
+    for(let i=0;i<array.length;i++) {
+        probs[i]=(3/(a*Math.sqrt(2*Math.PI)))*Math.exp(-0.5*(((3*(i-average))/a)**2))
+    }
+
+    var dic={};
+    for(let i=0;i<array.length;i++) {
+        dic[array[i]]=probs[i];
+    }
+
+    return dic;
+}
+
+
+/**
+ * It takes two numbers as arguments, and returns an array of numbers between those two numbers.
+ * @param start - The starting number of the sequence.
+ * @param end - The end of the range (inclusive)
+ * @returns An array of numbers from start to end.
+ */
+export function createArray(start,end) {
+    var arr=[];
+    for(let i=start;i<=end;i++) {
+        arr.push(i);
+    }
+    return arr;
+}
