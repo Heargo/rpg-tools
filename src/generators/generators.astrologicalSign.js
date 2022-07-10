@@ -1,5 +1,5 @@
 
-function niemeDay(day,month,year){
+function niemeDaySinceYear0(day,month,year){
     var nb_j=0;
     var liste_mois;
     if (year%4==0 && year%100!=0 || year%400==0) {
@@ -10,46 +10,56 @@ function niemeDay(day,month,year){
     for (var i=0;i<month-1;i++) {
         nb_j+=liste_mois[i];
     }
-    return nb_j+day;
+    return nb_j+day+365*year;
+}
+
+function isBetweenDates(d1,d2,d3){
+    //a date is in format [day,month,year]
+    var d1_nb=niemeDaySinceYear0(d1[0],d1[1],d1[2]);
+    var d2_nb=niemeDaySinceYear0(d2[0],d2[1],d2[2]);
+    var d3_nb=niemeDaySinceYear0(d3[0],d3[1],d3[2]);
+    return d1_nb<=d2_nb && d2_nb<=d3_nb;
+
 }
 
 export function astroSign(day,month,year){
     var sign ="";
-    if (niemeDay(21,3,year)<=niemeDay(day,month,year)<=niemeDay(20,4,year)) {
+    if (isBetweenDates([21,3,year],[day,month,year],[20,4,year])) {
         sign ="Bélier";
     }
-    else if (niemeDay(21,4,year)<=niemeDay(day,month,year)<=niemeDay(21,5,year)) {
+    if (isBetweenDates([21,4,year],[day,month,year],[21,5,year])) {
         sign ="Taureau";
     }
-    else if (niemeDay(22,5,year)<=niemeDay(day,month,year)<=niemeDay(21,6,year)) {
+    if (isBetweenDates([22,5,year],[day,month,year],[21,6,year])) {
         sign ="Gémeaux";
     }
-    else if (niemeDay(22,6,year)<=niemeDay(day,month,year)<=niemeDay(22,7,year)) {
+    if (isBetweenDates([22,6,year],[day,month,year],[22,7,year])) {
         sign ="Cancer";
     }
-    else if (niemeDay(23,7,year)<=niemeDay(day,month,year)<=niemeDay(22,8,year)) {
+    if (isBetweenDates([23,7,year],[day,month,year],[22,8,year])) {
         sign ="Lion";
     }
-    else if (niemeDay(23,8,year)<=niemeDay(day,month,year)<=niemeDay(22,9,year)) {
+    if (isBetweenDates([23,8,year],[day,month,year],[22,9,year])) {
         sign ="Vierge";
     }
-    else if (niemeDay(23,9,year)<=niemeDay(day,month,year)<=niemeDay(22,10,year)) {
+    if (isBetweenDates([23,9,year],[day,month,year],[22,10,year])) {
         sign ="Balance";
     }
-    else if (niemeDay(23,10,year)<=niemeDay(day,month,year)<=niemeDay(22,11,year)) {
+    if (isBetweenDates([23,10,year],[day,month,year],[22,11,year])) {
         sign ="Scorpion";
     }
-    else if (niemeDay(23,11,year)<=niemeDay(day,month,year)<=niemeDay(21,12,year)) {
+    if (isBetweenDates([23,11,year],[day,month,year],[22,12,year])) {
         sign ="Sagittaire";
     }
-    else if (niemeDay(22,12,year)<=niemeDay(day,month,year)<=niemeDay(21,1,year+1)) {
+    if (isBetweenDates([23,12,year-1],[day,month,year],[21,1,year])) {
         sign ="Capricorne";
     }
-    else if (niemeDay(22,1,year+1)<=niemeDay(day,month,year+1)<=niemeDay(21,2,year+1)) {
+    if (isBetweenDates([22,1,year+1],[day,month,year+1],[20,2,year+1])) {
         sign ="Verseau";
     }
-    else if (niemeDay(22,2,year+1)<=niemeDay(day,month,year+1)<=niemeDay(20,3,year+1)) {
+    if (isBetweenDates([21,2,year+1],[day,month,year+1],[19,3,year+1])) {
         sign ="Poissons";
     }
+
     return sign;
 }
