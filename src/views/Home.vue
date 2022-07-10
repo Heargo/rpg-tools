@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import {description} from "@/generators/generators.description.js";
+import { stats } from "../generators/generator.stats";
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 //import names.json from assets/json
@@ -18,9 +18,12 @@ export default {
     HelloWorld
   },
   mounted() {
-    var words = description("Tom",16,"boy",{wealth:16,intelligence:5,strength:3,creativity:8});
-    console.log(words)
-    //add a new words
+    // var h = stats.wealth()
+    // console.log("wealth: " + h)
+    //foreach stats 
+    for (var key in stats) {
+      console.log(stats[key].name,stats[key].generate())
+    }
     
 
 
