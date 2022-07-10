@@ -1,5 +1,5 @@
 //import pickMultiples from random
-import {pickWeight, pick} from './generators.random.js';
+import {pickWeight, pick} from './generators.tools.js';
 
 // ##################
 // ###  LEARNING  ###
@@ -259,7 +259,7 @@ export function markovMultiple(minimumSize,learningList,numberOfWords)
 /**
  * It takes a list of names, and returns a random name from that list or generates a random name with markov chain algorithm
  * @param names - an array or object of arrays of names
- * @param [gender] - The gender of the name.
+ * @param [number=1] - the number of name to generate
  * @param [markov=false] - If true, the name will be generated using a markov chain. If false, it will
  * be randomly selected from the list.
  * @param [minimumSize=3] - The minimum size of the name.
@@ -281,7 +281,6 @@ export function randomName(names,number=1,markov=false,minimumSize=3)
 /**
  * It takes an object of arrays of names, and returns a random name from one of the arrays
  * @param [names] - an object containing the names.
- * @param [gender] - the gender of the name you want to generate.
  * @param [number] - number of names to pick
  * @returns A random name or list of names from the list.
  */
@@ -291,17 +290,17 @@ export function randomExistingName(names,number=1)
     var namesList=[];
     for(var i=0;i<number;i++)
     {
-        //pick a random gender if gender is not specified
-        var gender = pick(Object.keys(names));
+        //pick a random categorie 
+        var categorie = pick(Object.keys(names));
         //if names is an object
         if(!Array.isArray(names))
         {
-            options = names[gender];
-            //while option is an object, pick a random key
+            options = names[categorie];
+            //while option is an object, pick a random categorie
             while(!Array.isArray(options))
             {
-                gender = pick(Object.keys(options));
-                options = options[gender];
+                categorie = pick(Object.keys(options));
+                options = options[categorie];
             }
         }else{
             options = names;
@@ -310,8 +309,9 @@ export function randomExistingName(names,number=1)
         //then pick a random name from the list
         namesList.push(pick(options));
 
-        //reset gender
-        gender =""
+        //reset categorie
+        categorie =""
+        
     }
     
     return namesList;
