@@ -18,10 +18,10 @@ export function passion(stats,threshold=7,n=2)
     {
         if (stats[stat]>=threshold)
         {
-            passionsOptions.concat(description[stat]);
+            passionsOptions= passionsOptions.concat(descriptions[stat]);
         }
     }
-
+    console.log(passionsOptions);
     //select n passions
     var passions = [];
     var selectPassion = selecterNoRepeats(passionsOptions);
@@ -39,7 +39,7 @@ export function description(name,age,gender,stats)
     var descriptionTemplateId = 0; 
     //wealth category
     var familyType="";
-    if (stats.wealth>=8) familyType="rich";
+    if (stats.wealth>=8) familyType="riche";
     else if(stats.wealth>=6) familyType="aisée";
     else if(stats.wealth>=4) familyType="modeste";
     else familyType="pauvre";

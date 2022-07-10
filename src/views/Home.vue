@@ -18,7 +18,7 @@ export default {
     HelloWorld
   },
   mounted() {
-    var words = description("Tom",16,"boy",{wealth:6,intelligence:5,strength:3,creativity:8});
+    var words = description("Tom",16,"boy",{wealth:16,intelligence:5,strength:3,creativity:8});
     console.log(words)
     //add a new words
     
