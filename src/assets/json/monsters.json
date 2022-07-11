@@ -1,0 +1,323 @@
+{
+    "difficulty_range":{
+        "easy":[3,6],
+        "normal":[6,12],
+        "hard":[20,40]
+    },
+    "price_range":{
+        "easy":1.103,
+        "normal":1.11,
+        "hard":1.114
+    },
+    "ask_help_exemples":[
+        "vous demande de l'aide",
+        "demande de l'aide d'un valeureux guerrrier",
+        "demande de l'aide d'un mage puissant",
+        "demande de l'aide d'un aventurier"
+    ],
+    "variants":{
+        "couleur_ternes":["noir","blanc","gris","sombre","marron"],
+        "couleurs_vives":["rouge","jaune","vert","bleu","violet","orange"],
+        "couleur_pelage":["rayé","moucheté","tricolor","bai"],
+        "adj_agressif":["féroce","puissant","sanguinaire","lunatique","bestial"],
+        "adj_passif":["doux","paresseux"],
+        "adj_peur":["effrayant","monstrueux","terrifiant","lugubre","maléfique","perfide"],
+        "bad_side":["corrompu"],
+        "gros":["géant","colossal","colosse","goliath","élite","titan","titanesque"]
+    },
+    "places":{     
+        "places_terre_sauvage":["dans les steppes","dans les landes","dans la forêt","dans le val"],
+        "places_terre_urbain":["en ville","dans les parcs","dans les égouts"],
+        "places_ocean":["en eaux tropicales","dans les profondeurs","dans les abysses","dans les récifs"],
+        "places_riviere":["dans les rivières","dans les ruisseaux","dans un fleuve","dans les torrents","dans les fiords"],
+        "places_sombres":["en forêt","dans les cavernes","dans les grottes","dans un gouffre","dans les mines"],
+        "places_glauque":["dans une nécrople","dans les cryptes","dans les égouts"],
+        "places_humides":["dans un marais","dans une toubière","dans des marigots","dans la mangrove","dans les rizières"],
+        "places_altitude":["sur la crête","dans les pierriers","dans la montagne","dans les montagnes"],
+        "places_froids":["dans la toundra","dans un glacier"],
+        "places_sec":["dans le desert","dans les dunes","dans la savane","dans un mesa"]
+    },
+    "biome_correspondance":{
+        "Marine":["places_ocean"],
+        "Taiga":["places_froids"],
+        "Temperate deciduous fore":["places_terre_sauvage","places_sombres"],
+        "Grassland":["places_terre_sauvage","places_sombres"],
+        "Temperate rainforest":["places_sombres"],
+        "Wetland":["places_sombres","places_humides"],
+        "Cold desert":["places_froids"],
+        "Tropical rainforest":["places_sombres"],
+        "Tundra":["places_sombres"],
+        "Glacier":["places_froids"],
+        "Hot desert":["places_sec"],
+        "Savanna":["places_terre_sauvage","places_sombres","places_sec"],
+        "Tropical seasonal forest":["places_sombres"]
+    },
+    "bestiaire_passif":["cochons","vaches","poules","animaux"],
+    "bestiaire_agressif":{
+        "Loups":{
+            "tag":["carnivore","group"],
+            "variants":["couleur_ternes","couleur_pelage","adj_agressif"],
+            "places":["places_terre_sauvage"]
+        },
+        "Ogres":{
+            "tag":["group","meurtrier"],
+            "variants":["couleur_ternes"],
+            "places":["places_altitude","places_sombres"]
+        },
+        "Gobelins":{
+            "tag":["group","meurtrier"],
+            "variants":[],
+            "places":["places_sombres","dans les marais"],
+            "customPlaces":["dans les marais"]
+        },
+        "Slimes":{
+            "tag":[],
+            "variants":[],
+            "places":["places_terre_sauvage"]
+        },
+        "Araignées":{
+            "tag":[],
+            "variants":[],
+            "places":["places_sombres"],
+            "customPlaces":["dans les forêt"]
+        },
+        "Banshees":{
+            "tag":[],
+            "variants":[],
+            "places":["places_sombres"]
+        },
+        "Basilic":{
+            "tag":[],
+            "variants":[],
+            "places":["places_sombres","places_glauque"]
+        },
+        "Terreurs mineures":{
+            "tag":[],
+            "variants":[],
+            "places":["places_sombres","places_glauque"],
+            "customPlaces":["en enfer"]
+        },
+        "Terreur majeure":{
+            "tag":[],
+            "variants":[],
+            "places":["places_sombres","places_glauque"],
+            "customPlaces":["en enfer"]
+        },
+        "Cyclope":{
+            "tag":["meurtrier"],
+            "variants":[],
+            "places":["places_sombres","places_altitude"]
+        },
+        "Démon":{
+            "tag":["meurtrier"],
+            "variants":[],
+            "places":["places_sombres","places_glauque"],
+            "customPlaces":["en enfer"]
+        },
+        "Djin":{
+            "tag":[],
+            "variants":[],
+            "places":["places_terre_sauvage","places_sec"]
+        },
+        "Dragon":{
+            "tag":[],
+            "variants":[],
+            "places":["places_altitude"],
+            "customPlaces":["dans les cavernes"]
+        },
+        "Dryades":{
+            "tag":[],
+            "variants":[],
+            "places":["places_riviere"]
+        },
+        "Centaures":{
+            "tag":["group"],
+            "variants":[],
+            "places":["places_terre_sauvage"]
+        },
+        "Chauves-souris":{
+            "tag":["aérien"],
+            "variants":[],
+            "places":["places_sombres","places_glauque"]
+        },
+        "Chimères":{
+            "tag":[],
+            "variants":[],
+            "places":["places_sombres"]
+        },
+        "Ectoplasmes":{
+            "tag":[],
+            "variants":[],
+            "places":["places_sombres","places_glauque"]
+        },
+        "Elementaires":{
+            "tag":["group"],
+            "variants":[],
+            "places":["places_terre_sauvage","places_riviere","places_sec","places_humides","places_froids","places_altitude"]
+        },
+        "Ents":{
+            "tag":[],
+            "variants":[],
+            "places":[],
+            "customPlaces":["dans les forêt","en forêt"]
+        },
+        "Fantômes":{
+            "tag":["aérien"],
+            "variants":[],
+            "places":["places_sombres"],
+            "customPlaces":["dans un vieux manoir"]
+        },
+        "Farfadets":{
+            "tag":["group"],
+            "variants":[],
+            "places":["places_terre_sauvage"]
+        },
+        "Géants":{
+            "tag":["group"],
+            "variants":[],
+            "places":["places_terre_sauvage","places_altitude"]
+        },
+        "Génie":{
+            "tag":[],
+            "variants":[],
+            "places":["places_sec"],
+            "customPlaces":["dans les bois"]
+        },
+        "Gnomes":{
+            "tag":["group"],
+            "variants":[],
+            "places":["places_sombres","places_altitude"]
+        },
+        "Golem":{
+            "tag":[],
+            "variants":[],
+            "places":["places_terre_sauvage","places_sombres","places_altitude"]
+        },
+        "Goules":{
+            "tag":["meurtrier"],
+            "variants":[],
+            "places":["places_sombres","places_glauque"]
+        },
+        "Gorgones":{
+            "tag":["group","meurtrier"],
+            "variants":[],
+            "places":["places_humides","places_glauque"]
+        },
+        "Griffons":{
+            "tag":["group"],
+            "variants":[],
+            "places":["places_altitude"]
+        },
+        "Harpies":{
+            "tag":["group","meurtrier","aérien"],
+            "variants":[],
+            "places":["places_altitude"]
+        },
+        "Hobgobelins":{
+            "tag":["group","meurtrier"],
+            "variants":[],
+            "places":["places_terre_sauvage","places_sombres"],
+            "customPlaces":["dans les marais"]
+        },
+        "Hydre":{
+            "tag":[],
+            "variants":[],
+            "places":["places_terre_sauvage"]
+        },
+        "Kraken":{
+            "tag":[],
+            "variants":[],
+            "places":["places_ocean"]
+        },
+        "Lutins":{
+            "tag":["group"],
+            "variants":[],
+            "places":["places_terre_sauvage","places_sombres"]
+        },
+        "Manticore":{
+            "tag":[],
+            "variants":[],
+            "places":["places_terre_sauvage"]
+        },
+        "Minautore":{
+            "tag":[],
+            "variants":[],
+            "places":["places_terre_sauvage","places_altitude"]
+        },
+        "Momies":{
+            "tag":["group"],
+            "variants":[],
+            "places":["places_sec","places_glauque"]
+        },
+        "Nymphes":{
+            "tag":[],
+            "variants":[],
+            "places":["places_ocean","places_riviere"]
+        },
+        "Ondines":{
+            "tag":["marin"],
+            "variants":[],
+            "places":["places_ocean"]
+        },
+        "Orcs":{
+            "tag":["group","meurtrier"],
+            "variants":[],
+            "places":["places_terre_sauvage","places_sombres"]
+        },
+        "Revenants":{
+            "tag":["group","meurtrier"],
+            "variants":[],
+            "places":["places_glauque"]
+        },
+        "Scorpions":{
+            "tag":[],
+            "variants":[],
+            "places":["places_sec"]
+        },
+        "Sirènes":{
+            "tag":["group","marin"],
+            "variants":[],
+            "places":["places_ocean"]
+        },
+        "Sorcière":{
+            "tag":[],
+            "variants":[],
+            "places":["places_glauque"]
+        },
+        "Spectres":{
+            "tag":[],
+            "variants":[],
+            "places":["places_glauque"]
+        },
+        "Sphinx":{
+            "tag":[],
+            "variants":[],
+            "places":["places_altitude"]
+        },
+        "Squelettes":{
+            "tag":["meurtrier"],
+            "variants":[],
+            "places":["places_sombres","places_glauque"]
+        },
+        "Titan":{
+            "tag":[],
+            "variants":[],
+            "places":["places_terre_sauvage","places_altitude"]
+        },
+        "Trolls":{
+            "tag":["group","meurtrier"],
+            "variants":[],
+            "places":["places_terre_sauvage","places_froids","places_humides","places_sombres"]
+        },
+        "Vampires":{
+            "tag":["group","meurtrier"],
+            "variants":[],
+            "places":["places_sombres","places_glauque"]
+        },
+        "Zombies":{
+            "tag":["group","meurtrier"],
+            "variants":[],
+            "places":["places_glauque"]
+        }
+    }
+}

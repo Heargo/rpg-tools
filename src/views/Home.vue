@@ -11,6 +11,7 @@ import { profile } from "@/generators/generators.profile.js";
 import HelloWorld from '@/components/HelloWorld.vue'
 //import names.json from assets/json
 // import names from '@/assets/json/names.json'
+import {monster} from '@/generators/generators.monsters.js'
 
 export default {
   name: 'Home',
@@ -19,6 +20,7 @@ export default {
   },
   mounted() {
     console.log(profile());
+    console.log(monster());
     
 
 
