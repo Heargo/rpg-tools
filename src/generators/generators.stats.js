@@ -188,6 +188,15 @@ export const stats={
             return Math.min(Math.max(value, 1), max);
         }
     },
+    // //newstat
+    // newstat: {
+    //     name: 'newstat',
+    //     args:["max"],
+    //     generate:function(max=10)
+    //     {
+    //         return parseInt(pickWeight(gauss(createArray(1,max),5)).item);
+    //     }
+    // }
 
     
 }
