@@ -1,12 +1,12 @@
 import {randomName} from "./generators.name.js";
 import {description} from "./generators.description.js";
-import {stats} from "./generators.stats.js";
+import {newStats,MAX_STAT_POINTS} from "./generators.stats.js";
 import { astroSign } from "./generators.astrologicalSign.js"; 
 import names from "@/assets/json/names.json";
 import {pick,createArray, getKeyByValue} from "./generators.tools.js";
 
 
-export function profile(name=null,origin=null,gender=null,age=null,century=null,statistics={},max=10)
+export function profile(name=null,origin=null,gender=null,age=null,century=null,statistics={},max=MAX_STAT_POINTS)
 {
     //gender
     if(!gender) gender = pick(["boy","girl"]);
@@ -33,20 +33,7 @@ export function profile(name=null,origin=null,gender=null,age=null,century=null,
 
     //statistics
     //for each statistic, in stats, generate a random value if not provided in statistics
-    for(let s in stats){
-        var stat = stats[s];
-        if(!statistics[stat.name]){
-            var paramsValues = [];
-            //get needeed args values from statistics
-            for(let i in stat.args){
-                var arg = stat.args[i];
-                if(arg == "max") paramsValues.push(max);
-                else paramsValues.push(statistics[arg]);
-            }
-            //update statistics with the generated value
-            statistics[stat.name] = stat.generate.apply(this,paramsValues);
-        }
-    }
+    statistics= newStats(max,statistics);
 
     //name
     if(!name) name = randomName(origin,1)[0];
@@ -67,6 +54,5 @@ export function profile(name=null,origin=null,gender=null,age=null,century=null,
         "stats":statistics,
         "description":desc
         }
-
 
 }
