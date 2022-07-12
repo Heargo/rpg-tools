@@ -1,20 +1,4 @@
 {
-    "difficulty_range":{
-        "easy":[3,6],
-        "normal":[6,12],
-        "hard":[20,40]
-    },
-    "price_range":{
-        "easy":1.103,
-        "normal":1.11,
-        "hard":1.114
-    },
-    "ask_help_exemples":[
-        "vous demande de l'aide",
-        "demande de l'aide d'un valeureux guerrrier",
-        "demande de l'aide d'un mage puissant",
-        "demande de l'aide d'un aventurier"
-    ],
     "variants":{
         "couleur_ternes":["noir","blanc","gris","sombre","marron"],
         "couleurs_vives":["rouge","jaune","vert","bleu","violet","orange"],
@@ -71,34 +55,34 @@
             "customPlaces":["dans les marais"]
         },
         "Slimes":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_terre_sauvage"]
         },
         "Araignées":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_sombres"],
             "customPlaces":["dans les forêt"]
         },
         "Banshees":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_sombres"]
         },
         "Basilic":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_sombres","places_glauque"]
         },
         "Terreurs mineures":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_sombres","places_glauque"],
             "customPlaces":["en enfer"]
         },
         "Terreur majeure":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_sombres","places_glauque"],
             "customPlaces":["en enfer"]
@@ -115,18 +99,18 @@
             "customPlaces":["en enfer"]
         },
         "Djin":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_terre_sauvage","places_sec"]
         },
         "Dragon":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_altitude"],
             "customPlaces":["dans les cavernes"]
         },
         "Dryades":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_riviere"]
         },
@@ -141,12 +125,12 @@
             "places":["places_sombres","places_glauque"]
         },
         "Chimères":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_sombres"]
         },
         "Ectoplasmes":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_sombres","places_glauque"]
         },
@@ -156,7 +140,7 @@
             "places":["places_terre_sauvage","places_riviere","places_sec","places_humides","places_froids","places_altitude"]
         },
         "Ents":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":[],
             "customPlaces":["dans les forêt","en forêt"]
@@ -178,7 +162,7 @@
             "places":["places_terre_sauvage","places_altitude"]
         },
         "Génie":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_sec"],
             "customPlaces":["dans les bois"]
@@ -189,7 +173,7 @@
             "places":["places_sombres","places_altitude"]
         },
         "Golem":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_terre_sauvage","places_sombres","places_altitude"]
         },
@@ -220,12 +204,12 @@
             "customPlaces":["dans les marais"]
         },
         "Hydre":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_terre_sauvage"]
         },
         "Kraken":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_ocean"]
         },
@@ -235,12 +219,12 @@
             "places":["places_terre_sauvage","places_sombres"]
         },
         "Manticore":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_terre_sauvage"]
         },
         "Minautore":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_terre_sauvage","places_altitude"]
         },
@@ -250,7 +234,7 @@
             "places":["places_sec","places_glauque"]
         },
         "Nymphes":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_ocean","places_riviere"]
         },
@@ -270,7 +254,7 @@
             "places":["places_glauque"]
         },
         "Scorpions":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_sec"]
         },
@@ -280,17 +264,17 @@
             "places":["places_ocean"]
         },
         "Sorcière":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_glauque"]
         },
         "Spectres":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_glauque"]
         },
         "Sphinx":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_altitude"]
         },
@@ -300,7 +284,7 @@
             "places":["places_sombres","places_glauque"]
         },
         "Titan":{
-            "tag":[],
+            "tag":["meurtrier"],
             "variants":[],
             "places":["places_terre_sauvage","places_altitude"]
         },

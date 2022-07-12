@@ -7,11 +7,8 @@
 
 <script>
 import { profile } from "@/generators/generators.profile.js";
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-//import names.json from assets/json
-// import names from '@/assets/json/names.json'
-import {monster} from '@/generators/generators.monster.js'
+import HelloWorld from '@/components/HelloWorld.vue';
+import {Quest} from '@/generators/generators.quest.js';
 
 export default {
   name: 'Home',
@@ -19,8 +16,10 @@ export default {
     HelloWorld
   },
   mounted() {
-    console.log(profile());
-    console.log(monster());
+    var pnj = profile();
+    // console.log(pnj);
+    // console.log(monster());
+    console.log(new Quest(pnj));
   },
 }
 </script>

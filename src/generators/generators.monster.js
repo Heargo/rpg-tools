@@ -48,7 +48,7 @@ export function monster(level=null,biome=null,stats={},max=MAX_STAT_POINTS) {
         "variant":variant,
         "level":level,
         "biome":biome,
-        "place":place,
+        "place":pick(monsters.places[place]),
         "stats":stats
     };
 }

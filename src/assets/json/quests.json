@@ -1,0 +1,47 @@
+{
+    "difficulty_range":{
+        "easy":[3,6],
+        "normal":[6,12],
+        "hard":[20,40]
+    },
+    "price_range":{
+        "easy":1.103,
+        "normal":1.11,
+        "hard":1.114
+    },
+    "ask_help_exemples":[
+        "vous demande de l'aide",
+        "demande de l'aide d'un valeureux guerrrier",
+        "demande de l'aide d'un mage puissant",
+        "demande de l'aide d'un aventurier"
+    ],
+    "kill":{
+        "carnivore":{
+            "names":["Protéger les {animaux_passif} de {giver}","Venger les {animaux_passif}","Venger les {animaux_passif} de {giver}","Aider {giver}"],
+            "descriptions":["{giver} {ask_help} pour chasser les {objectif} qui déciment ses {animaux_passif}. Vous pourrez trouver les {objectif} {location}. Tuez-en {nb}"]
+        },
+        "aggressive":{
+            "names":["Protégez {giver}","Au secours de {giver}","Les peurs de {giver}"],
+            "descriptions":["{giver} {ask_help} pour le protéger des {objectif} qui sévissent {location}. D'après {giver} il faudrait en tuer {nb} pour éliminer la menace.","{giver} {ask_help} pour tuer {nb} {objectif}. Après avoir attaqué {giver}, les {objectif} ont fuis {location}."]
+        },
+        "group":{
+            "names":["Chasse aux {objectif}","Pacification {location}","Chasse {location}"],
+            "descriptions":["Cela fait maintenant plusieurs jours que {nb} {objectif} vagabondent en groupe {location}. {giver} {ask_help} afin d'éradiquer la menace."]
+        },
+        "meurtrier":{
+
+            "names":["Une dette de sang","La vengeance de {giver}","Le sang des {objectif}"],
+            "descriptions":["Des {objectif} ont été vus {location} en train de massacrer ses amis. {giver} vous demande de venger ses amis."]
+        },
+        "aérien":{
+
+            "names":["Nuit dangereuses","Raids aériens","le repaire des {objectif}"],
+            "descriptions":["Cela fait maintenant plusieurs semaines qu'environ {nb} {objectif} nous survolent la nuit rendant toute activité nocture impossible. {giver} à besoin d'aide pour rendre la zone plus sûre. Il pense que ces monstres sont {location} durant la journée."]
+        },
+        "marin":{
+
+            "names":["A la pêche !","La vengeance des marins"],
+            "descriptions":["{giver} {ask_help} car nombre de nos pêcheurs se font pièger et tuer par les {objectif}. D'après certains, vous pourrez les trouver {location}"]
+        }
+    }
+}
