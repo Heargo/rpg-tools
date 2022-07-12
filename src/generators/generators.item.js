@@ -101,6 +101,7 @@ export class Item{
             this.price += mean*(price/100);
         }
 
+        //TODO
         // // durability
         // this.durabilite = durabilite;
         // if(durabilite==null){
@@ -108,7 +109,9 @@ export class Item{
         //     var max_durabilite = ITEMS.grades[this.grade].durabilite.max;
         //     this.durabilite = pick(createArray(min_durabilite,max_durabilite));
         // }
-        console.log("durabilité : "+durabilite);
+        this.durabilite = durabilite;
+
+
 
 
         //description
