@@ -9,6 +9,7 @@
 import { profile } from "@/generators/generators.profile.js";
 import HelloWorld from '@/components/HelloWorld.vue';
 import {Quest} from '@/generators/generators.quest.js';
+import {Item} from '@/generators/generators.item.js';
 
 export default {
   name: 'Home',
@@ -20,6 +21,7 @@ export default {
     // console.log(pnj);
     // console.log(monster());
     console.log(new Quest(pnj));
+    console.log(new Item("weapons"));
   },
 }
 </script>

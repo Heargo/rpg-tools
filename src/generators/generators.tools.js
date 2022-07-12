@@ -1,4 +1,4 @@
-
+import ITEMS from '@/assets/json/items.json';
 /**
  * It takes an object with keys and values, and returns an array of the keys repeated a number of times
  * equal to the value.
@@ -129,4 +129,29 @@ export function createArray(start,end) {
  */
 export function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
+}
+
+
+
+/**
+ * It takes a word and a category, and if the category is feminine, it checks if the word is in a
+ * dictionary of masculine words that have a feminine equivalent, and if it is, it returns the feminine
+ * equivalent. If the category is plural, it adds an 's' to the word.
+ * @param mot - the word to check
+ * @param category - category of the word to check
+ */
+export function check_orthographe(mot,category)
+{
+    var new_mot=mot;
+    if (ITEMS.language.liste_category_feminins.includes(category))
+    {
+        if (Object.keys(ITEMS.language.dico_ortographe_m_to_f).includes(mot))
+            new_mot=ITEMS.language.dico_ortographe_m_to_f[mot];
+
+        if (ITEMS.language.liste_category_pluriel.includes(category)){
+            if (new_mot[-1]!='x' && new_mot[-1]!='s')
+                new_mot+='s';
+        }
+    }
+    return new_mot;
 }
