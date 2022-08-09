@@ -5,7 +5,7 @@
         "dico_ortographe_m_to_f":{
             "commun":"commune","éternel":"éternelle","enchanté":"enchantée","intemporel":"intemporelle",
             "tranchant":"tranchante","acéré":"acérée","pointu":"pointue","vif":"vive","résitant":"résitante",
-            "rouillé":"rouillée","brillant":"brillante","léger":"légère","soyeux":"soyeuse"," serti":" sertie","meutrier":"meurtrière"
+            "rouillé":"rouillée","brillant":"brillante","léger":"légère","soyeux":"soyeuse","serti":"sertie","meutrier":"meurtrière"
         }
     },
     "levelMax":100,
@@ -68,7 +68,7 @@
     },
     "dico_adjectif":{
         "de":["l'aube","l'ombre","la nuit","la brume","l'espoir","la forêt","l'eau","la malice","l'intelligence","Cronos"],
-        "serti":[" d'or"," de diamants"," de rubis"," de saphirs"," d'émeraudes"," de pierres précieuses"],
+        "serti":["d'or","de diamants","de rubis","de saphirs","d'émeraudes","de pierres précieuses"],
         "d'":["espoir","Artémis","Athéna","Arès","Apollon","Eole","Hécate","Helios","Hestia"],
         " ":["éternel","enchanté","intemporel","sombre","d'Artémis","d'Athéna","d'Arès","d'Apollon","d'Eole","de Cronos","d'Hécate","d'Helios","d'Hestia"],
         "en":["fer","or","os"],
